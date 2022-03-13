@@ -49,6 +49,19 @@
             android:layout_weight="1"
             android:text="@string/_3"
             android:textSize="@dimen/button_text" />
+
+        <Button
+            android:id="@+id/button_division"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="@string/_division"
+            android:textSize="@dimen/button_text" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -90,6 +103,18 @@
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
             android:text="@string/_6"
+            android:textSize="@dimen/button_text" />
+
+        <Button
+            android:id="@+id/button_division"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="@string/_multiplication"
             android:textSize="@dimen/button_text" />
     </LinearLayout>
 
@@ -133,6 +158,18 @@
             android:layout_weight="1"
             android:text="@string/_9"
             android:textSize="@dimen/button_text" />
+
+        <Button
+            android:id="@+id/button_division"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="@string/_minus"
+            android:textSize="@dimen/button_text" />
     </LinearLayout>
 
     <LinearLayout
@@ -142,7 +179,7 @@
 
         <Button
             android:id="@+id/button_0"
-            android:layout_width="0dp"
+            android:layout_width="16dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -162,6 +199,18 @@
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
             android:text="@string/_point"
+            android:textSize="@dimen/button_text" />
+
+        <Button
+            android:id="@+id/button_division"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:text="@string/_plus"
             android:textSize="@dimen/button_text" />
     </LinearLayout>
 
