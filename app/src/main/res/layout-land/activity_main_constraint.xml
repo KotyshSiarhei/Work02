@@ -8,38 +8,39 @@
 
     <EditText
         android:id="@+id/calculation"
-        android:layout_width="match_parent"
-        android:layout_height="95dp"
+        android:layout_marginStart="18dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:textAlignment="textEnd"
         android:textColor="@color/white"
-        android:textSize="56sp"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/result"
-        android:layout_width="match_parent"
-        android:layout_height="95dp"
-        android:layout_marginTop="5dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:textAlignment="textEnd"
         android:textColor="@color/white"
-        android:textSize="56sp"
+        android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/calculation"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/calculation" />
+        app:layout_constraintStart_toEndOf="@+id/calculation"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/black"
         android:text="@string/_1"
-        android:textColor="@color/white"
         android:textSize="@dimen/button_text"
+        android:textColor="@color/white"
+        android:backgroundTint="@android:color/black"
         app:layout_constraintBottom_toTopOf="@+id/button_4"
         app:layout_constraintEnd_toStartOf="@+id/button_2"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +75,7 @@
         android:text="@string/_division"
         android:textSize="@dimen/button_text"
         app:layout_constraintBottom_toTopOf="@+id/button_multiplication"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_ac"
         app:layout_constraintStart_toEndOf="@+id/button_3"
         app:layout_constraintTop_toBottomOf="@id/result" />
 
@@ -196,33 +197,35 @@
 
     <Button
         android:id="@+id/button_ac"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="73dp"
         android:text="@string/_ac"
         android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="@id/button_7"
-        app:layout_constraintStart_toStartOf="@id/button_7"
-        app:layout_constraintTop_toBottomOf="@+id/button_0" />
+        app:layout_constraintBottom_toTopOf="@+id/button_del"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_division"
+        app:layout_constraintTop_toBottomOf="@id/result" />
 
     <Button
         android:id="@+id/button_del"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="73dp"
         android:text="@string/_del"
         android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="@id/button_8"
-        app:layout_constraintStart_toStartOf="@id/button_8"
-        app:layout_constraintTop_toBottomOf="@+id/button_0" />
+        app:layout_constraintBottom_toTopOf="@+id/button_total"
+        app:layout_constraintEnd_toEndOf="@id/button_ac"
+        app:layout_constraintStart_toStartOf="@+id/button_ac"
+        app:layout_constraintTop_toBottomOf="@id/button_ac" />
 
 
     <Button
         android:id="@+id/button_total"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="146dp"
         android:text="@string/_total"
         android:textSize="@dimen/button_text"
-        app:layout_constraintEnd_toEndOf="@id/button_plus"
-        app:layout_constraintStart_toStartOf="@id/button_point"
-        app:layout_constraintTop_toBottomOf="@+id/button_point" />
+        app:layout_constraintTop_toBottomOf="@id/button_del"
+        app:layout_constraintEnd_toEndOf="@id/button_del"
+        app:layout_constraintStart_toStartOf="@+id/button_del" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

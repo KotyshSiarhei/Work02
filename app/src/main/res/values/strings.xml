@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Work02</string>
-    <string name="_2">2</string>
+    <string name="app_name">KS</string>
     <string name="_1">1</string>
+    <string name="_2">2</string>
     <string name="_3">3</string>
     <string name="_4">4</string>
     <string name="_5">5</string>
@@ -15,4 +15,7 @@
     <string name="_multiplication">*</string>
     <string name="_minus">-</string>
     <string name="_plus">+</string>
+    <string name="_ac">ac</string>
+    <string name="_del">del</string>
+    <string name="_total">=</string>
 </resources>
